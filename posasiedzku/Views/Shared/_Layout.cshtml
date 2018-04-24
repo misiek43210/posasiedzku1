@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title — Posąsiedzku! Wymieniaj usługi!</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+    <div class="navbar navbar-color navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Posąsiedzku!", "Index", "Home", new { area = "" }, new { @class = "navbar-brand nav-fontcolor logo-font" })
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Strona główna", "Index", "Home", new { @class = "nav-fontcolor" })</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-fontcolor" data-toggle="dropdown" role="button" aria-expanded="false">Kategoria<span class="caret"></span></a>
+                        <ul class="dropdown-menu  li-bg" role="menu">
+                            <li>@Html.ActionLink("Motoryzacja", "Moto", "Home", new { @class = "nav-fontcolor" })</li>
+                            <li>@Html.ActionLink("Motoryzacja", "Moto", "Home", new { @class = "nav-fontcolor" })</li>
+                            <li>@Html.ActionLink("Motoryzacja", "Moto", "Home", new { @class = "nav-fontcolor" })</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Motoryzacja", "Moto", "Home", new { @class = "nav-fontcolor" })</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Motoryzacja", "Moto", "Home", new { @class = "nav-fontcolor" })</li>
+                        </ul>
+                    </li>
+
+                    <li>@Html.ActionLink("Pomoc", "Help", "Home", new { @class = "nav-fontcolor" })</li>
+                </ul>
+
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-bar">
+                <ul class="nav navbar-nav">
+                    <li><a href="@Url.Action("Index", "Home")" class="linkbar">L O G O </a></li>
+                    <li><a href="@Url.Action("About", "Home")" class="linkbar">O nas</a></li>
+                    <li> <a href="@Url.Action("creator","Home")" class="linkbar">Twórcy</a></li>
+                    <li><a href="@Url.Action("Help", "Home")" class="linkbar">Pomoc</a></li>
+                    <li> <a href="@Url.Action("rules","Home")" class="linkbar">Regulamin</a></li>
+                    <li><a href="@Url.Action("Faq","Home")" class="linkbar">FAQ</a></li>
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+            <p class="copyfont">&copy; 2018 Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+  
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

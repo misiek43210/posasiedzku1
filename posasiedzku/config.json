@@ -1,0 +1,46 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "326dd5dc5899787161184614d04a50b9",
+      "css": "motorcycle",
+      "code": 61980,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d06b13f30947afbbdae6977413144183",
+      "css": "garden",
+      "code": 59418,
+      "src": "maki"
+    },
+    {
+      "uid": "eea1af32a01c5e7a9ce5675bcff64a7b",
+      "css": "laptop",
+      "code": 59392,
+      "src": "typicons"
+    },
+    {
+      "uid": "fda731b5a4026685e1a9c7e64228e2b2",
+      "css": "note-beamed",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "d1a7ajpi3149rk5q4861jw9f2lzg27d1",
+      "css": "user-pair",
+      "code": 59394,
+      "src": "modernpics"
+    },
+    {
+      "uid": "1n2jlgp5brxxzpvvrly6jbfutnk2fpra",
+      "css": "camera",
+      "code": 59395,
+      "src": "modernpics"
+    }
+  ]
+}
