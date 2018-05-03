@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-
+using System;
 namespace posasiedzku.Models
 {
     public class ExternalLoginConfirmationViewModel
@@ -64,6 +64,20 @@ namespace posasiedzku.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Imię")]
+        public string Name { get; set; }
+
+        [Required]
+        [Display(Name = "Nazwisko")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Data urodzenia")]
+        [DataType(DataType.Date)]
+        public DateTime BirthDate { get; set; }
+
+
         [Required]
         [EmailAddress]
         [Display(Name = "Adres e-mail")]
